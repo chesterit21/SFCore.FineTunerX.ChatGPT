@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+sqlalchemy
+psutil
+torch
+transformers
+peft
+bitsandbytes
+accelerate
+datasets
+deepspeed
+tokenizers

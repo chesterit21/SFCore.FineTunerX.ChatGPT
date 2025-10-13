@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <Target Name="RunPythonEngine" AfterTargets="Build">
+  <Exec Command="python ../FineTuneEngine/app.py" ContinueOnError="true" />
+</Target>
+
 </Project>
