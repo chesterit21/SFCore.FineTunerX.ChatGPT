@@ -4,7 +4,7 @@ sys.path.append(os.path.dirname(__file__))
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from routes.runs import runs
+from routes import runs
 from routes import datasets
 from routes import models
 from routes import system

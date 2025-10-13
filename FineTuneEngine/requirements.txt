@@ -3,11 +3,13 @@ uvicorn[standard]
 pydantic
 sqlalchemy
 psutil
-torch
-transformers
+torch==2.4.1
+torchvision==0.19.1
+transformers==4.44.2
+accelerate==0.33.0
+bitsandbytes==0.43.3
 peft
-bitsandbytes
-accelerate
 datasets
 deepspeed
 tokenizers
+nvidia-ml-py

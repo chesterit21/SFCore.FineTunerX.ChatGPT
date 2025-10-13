@@ -6,8 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <Target Name="RunPythonEngine" AfterTargets="Build">
-  <Exec Command="python ../FineTuneEngine/app.py" ContinueOnError="true" />
-</Target>
+<ItemGroup>
+  <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.9" />
+</ItemGroup>
 
 </Project>
