@@ -52,3 +52,19 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+# Visual Studio
+**/bin/
+**/obj/
+.vs/
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Data / models
+/FineTuneEngine/checkpoints/
+/FineTuneEngine/logs/
+*.ckpt
+*.pt
+*.safetensors
