@@ -1,6 +1,60 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
+@{
+    ViewData["Title"] = "Dataset & Config";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="container-fluid">
+    <div class="content-box">
+        <h2 class="mb-4" style="color: #a0a0ff;">DATASET & CONFIG</h2>
+        <hr />
+        <div class="row g-3">
+            <div class="col-lg-7">
+                <div class="card bg-dark text-light border-0">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">Konfigurasi Dataset</h5>
+                        <p class="text-secondary small mb-3">Langkah awal untuk menyiapkan data pelatihan. Anda bisa melanjutkan setelah model dipilih dan lisensi diakui pada halaman sebelumnya.</p>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label" for="datasetName">Nama Dataset</label>
+                                <input id="datasetName" class="form-control" placeholder="contoh: my-awesome-finetune" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label" for="trainSplit">Train/Val Split (%)</label>
+                                <div class="input-group">
+                                    <input id="trainSplit" type="number" class="form-control" min="50" max="95" value="90" />
+                                    <span class="input-group-text">Train</span>
+                                </div>
+                                <div class="form-text">Sisa persen otomatis untuk Validasi.</div>
+                            </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <button id="btnSaveDatasetCfg" class="btn btn-primary" type="button">Simpan Konfigurasi</button>
+                            <span id="datasetCfgSaved" class="text-success ms-2 d-none">Tersimpan ✔</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div id="modelSelectionSummary">
+                    <div class="card bg-dark text-light border-0">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Ringkasan Pemilihan Model</h5>
+                            <p class="text-secondary mb-0 small">Tidak ada model yang tersimpan. Silakan kembali ke halaman "New Setup Training" untuk memilih model.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast container for user feedback on this page -->
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 1080;">
+    <div id="liveToast" class="toast align-items-center text-bg-dark border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body" id="toastBody">Siap.</div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>

@@ -17,6 +17,14 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult SetupModel()
+    {
+        return View();
+    }
+    public IActionResult MonitoringFineTuning()
+    {
+        return View();
+    }
 
     public IActionResult Privacy()
     {

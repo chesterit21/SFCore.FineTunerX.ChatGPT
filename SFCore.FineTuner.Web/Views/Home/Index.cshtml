@@ -2,7 +2,94 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div class="container-fluid">
+        <div class="content-box">
+            <h2 class="mb-4" style="color: #a0a0ff;">Active Processes</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-hover table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Process Name</th>
+                            <th class="text-end">CPU %</th>
+                            <th class="text-end">Memory %</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>node.exe</td>
+                            <td class="text-end">23.5%</td>
+                            <td class="text-end">12.3%</td>
+                            <td class="text-center">
+                                <span class="status-badge status-running">Running</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-action btn-edit">Edit</button>
+                                <button class="btn btn-action btn-delete">Delete</button>
+                                <button class="btn btn-action btn-train">Train</button>
+                                <button class="btn btn-action btn-info">Info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>chrome.exe</td>
+                            <td class="text-end">18.2%</td>
+                            <td class="text-end">28.7%</td>
+                            <td class="text-center">
+                                <span class="status-badge status-running">Running</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-action btn-edit">Edit</button>
+                                <button class="btn btn-action btn-delete">Delete</button>
+                                <button class="btn btn-action btn-train">Train</button>
+                                <button class="btn btn-action btn-info">Info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>system</td>
+                            <td class="text-end">5.1%</td>
+                            <td class="text-end">8.4%</td>
+                            <td class="text-center">
+                                <span class="status-badge status-running">Running</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-action btn-edit">Edit</button>
+                                <button class="btn btn-action btn-delete">Delete</button>
+                                <button class="btn btn-action btn-train">Train</button>
+                                <button class="btn btn-action btn-info">Info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>docker.exe</td>
+                            <td class="text-end">12.8%</td>
+                            <td class="text-end">15.2%</td>
+                            <td class="text-center">
+                                <span class="status-badge status-idle">Idle</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-action btn-edit">Edit</button>
+                                <button class="btn btn-action btn-delete">Delete</button>
+                                <button class="btn btn-action btn-train">Train</button>
+                                <button class="btn btn-action btn-info">Info</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>vscode.exe</td>
+                            <td class="text-end">8.3%</td>
+                            <td class="text-end">22.1%</td>
+                            <td class="text-center">
+                                <span class="status-badge status-stopped">Stopped</span>
+                            </td>
+                            <td class="text-center">
+                                <button class="btn btn-action btn-edit">Edit</button>
+                                <button class="btn btn-action btn-delete">Delete</button>
+                                <button class="btn btn-action btn-train">Train</button>
+                                <button class="btn btn-action btn-info">Info</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
